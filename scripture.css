@@ -1,7 +1,7 @@
 .scripture-styles {
-	font-size: 18px;
+	font-size: 1.125rem;
 	font-family: 'Noto Serif', serif;
-	line-height: 25px;
+	line-height: 1.6rem;
 	color: #111111;
 	-webkit-font-smoothing: antialiased;
 
@@ -67,7 +67,7 @@
 	}
 
 	.x {
-		font-size: 16px;
+		font-size: 1rem;
 		box-sizing: border-box;
 		display: inline-block;
 		position: relative;
@@ -75,7 +75,7 @@
 		margin: 0 0.1em;
 		text-indent: 0;
 		text-align: left;
-		border-radius: 4px;
+		border-radius: 0.25rem;
 		border: 1px solid #dcdcdc;
 	}
 
@@ -114,14 +114,14 @@
 	}
 
 	.f {
-		font-size: 16px;
+		font-size: 1rem;
 		display: inline-block;
 		box-sizing: border-box;
 		padding: 0 0.4em;
 		margin: 0 0.1em;
 		text-indent: 0;
 		text-align: left;
-		border-radius: 4px;
+		border-radius: 0.25rem;
 		border: 1px solid #dcdcdc;
 	}
 
@@ -165,10 +165,10 @@
 	[class^='is'] {
 		text-align: center;
 		font-weight: bold;
-		font-size: 27px;
-		line-height: 50px;
-		margin-top: 25px;
-		margin-bottom: 25px;
+		font-size: 1.6rem;
+		line-height: 3rem;
+		margin-top: 1.6rem;
+		margin-bottom: 1.6rem;
 	}
 
 	[class^='ip'] {
@@ -232,9 +232,9 @@
 
 	.iot {
 		font-weight: bold;
-		font-size: 18px;
-		line-height: 25px;
-		margin-top: 25px;
+		font-size: 1.125rem;
+		line-height: 1.6rem;
+		margin-top: 1.6rem;
 		margin-bottom: 0px;
 	}
 
@@ -358,7 +358,7 @@
 	}
 
 	.b {
-		height: 25px;
+		height: 1.6rem;
 	}
 
 	[class^='q'] {
@@ -524,7 +524,7 @@
 
 	[class^='thr'] {
 		text-align: right;
-		padding: 0 25px;
+		padding: 0 1.6rem;
 	}
 
 	[class^='tc'] {
@@ -533,7 +533,7 @@
 
 	[class^='tcr'] {
 		text-align: right;
-		padding: 0 25px;
+		padding: 0 1.6rem;
 	}
 
 	[class^='mt'] {
@@ -545,15 +545,15 @@
 	.mt,
 	.mt1,
 	.mt2 {
-		font-size: 40px;
-		line-height: 50px;
-		margin-top: 25px;
-		margin-bottom: 25px;
+		font-size: 2.5rem;
+		line-height: 3rem;
+		margin-top: 1.6rem;
+		margin-bottom: 1.6rem;
 	}
 
 	.mt2 {
-		font-size: 34px;
-		margin-top: -25px;
+		font-size: 30.25rem;
+		margin-top: -1.6rem;
 		font-style: italic;
 		font-weight: normal;
 	}
@@ -565,15 +565,15 @@
 	.ms3 {
 		text-align: center;
 		font-weight: bold;
-		font-size: 27px;
-		line-height: 50px;
-		margin-top: 25px;
+		font-size: 1.6rem;
+		line-height: 3rem;
+		margin-top: 1.6rem;
 		margin-bottom: 0px;
 	}
 
 	.mr {
 		font-size: 0.9em;
-		margin-bottom: 25px;
+		margin-bottom: 1.6rem;
 		text-align: center;
 		font-weight: normal;
 		font-style: italic;
@@ -588,8 +588,8 @@
 		font-weight: bold;
 		font-style: italic;
 		font-size: inherit;
-		margin-bottom: 15px;
-		margin-top: 25px;
+		margin-bottom: 0.9rem;
+		margin-top: 1.6rem;
 	}
 
 	.sr {
@@ -601,7 +601,7 @@
 	}
 
 	.r {
-		font-size: 18px;
+		font-size: 1.125rem;
 		font-weight: normal;
 		font-style: italic;
 		text-align: center;
@@ -610,7 +610,7 @@
 
 	.rq {
 		font-size: inherit;
-		line-height: 25px;
+		line-height: 1.6rem;
 		font-style: italic;
 		text-align: right;
 		letter-spacing: normal;
