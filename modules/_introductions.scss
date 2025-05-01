@@ -1,0 +1,157 @@
+// imt = h2
+// imt1 = h2
+// imt2 = h3
+// ims = h2
+// ims1 = h2
+// ims2 = h3
+// is = h3
+// is1 = h3
+// is2  = h
+
+[class^='imt'],
+// Introduction section heading.
+[class^='is'] {
+	text-align: center;
+	font-weight: bold;
+	font-size: calc(1.5 * var(--ss-rem));
+	line-height: 1.8;
+	margin-block-start: calc(1.5 * var(--ss-rem));
+	margin-block-end: calc(1.5 * var(--ss-rem));
+}
+
+//  Introduction major title.
+.imt,
+.imt1,
+.imte,
+.imte1 {
+}
+
+.imt2,
+.imte2 {
+}
+
+.imt3,
+.imte3 {
+}
+
+.imt4,
+.imte4 {
+}
+
+// Introduction Paragraphs
+[class^='ip'] {
+	text-indent: 1em;
+}
+
+.ip {
+}
+
+// Indented Introduction Paragraph
+// https://ubsicap.github.io/usfm/introductions/index.html#ipi
+.ipi {
+	padding-inline-start: 1em;
+	padding-inline-end: 1em;
+}
+// Introduction flush left (margin) paragraph.
+:where(.im, .imi, .ipr) {
+	text-indent: 0;
+}
+:where(.imi, .ipq, .imq, [class^='iq'], .ili1) {
+	margin-inline-start: 1em;
+	margin-inline-end: 1em;
+}
+
+// Intro Quote
+.ipq {
+	font-style: italic;
+}
+
+// Introduction right aligned paragraph
+.ipr {
+	text-align: end;
+}
+
+// Introduction Poetic Line
+.iq,
+.iq1 {
+}
+
+.iq2 {
+	text-indent: 1em;
+}
+
+.iq3 {
+	//should this further indent?
+}
+
+// Introduction Blank Line
+.ib {
+	// @include trailer(1, $base-font-size, margin);
+}
+
+.ior {
+}
+
+// Introduction list item.
+[class^='ili'] {
+	padding-inline-start: 1em;
+	text-indent: -1em;
+}
+
+.ili {
+}
+
+.ili2 {
+	margin-inline-start: 2em;
+	margin-inline-end: 1em;
+}
+
+// Introduction outline title
+.iot {
+	font-weight: bold;
+	font-size: var(--ss-rem);
+	line-height: 1.5;
+	margin-block-start: calc(1.5 * var(--ss-rem));
+	margin-block-end: 0px;
+}
+
+// Introduction outline entry
+:where(.io, .io1, .io2, .io3, .io4) {
+	margin-inline-end: 0em;
+}
+
+.io,
+.io1 {
+	margin-inline-start: 1em;
+}
+
+.io2 {
+	margin-inline-start: 2em;
+}
+
+.io3 {
+	margin-inline-start: 3em;
+}
+
+.io4 {
+	margin-inline-start: 4em;
+}
+
+.ior {
+	font-style: italic;
+}
+
+//  Introduction explanatory or bridge text
+.iex {
+	text-indent: 1em;
+}
+
+//  Introduction quoted text.
+.iqt {
+	text-indent: 1em;
+	font-style: italic;
+}
+
+//  Introduction end.
+.ie {
+}

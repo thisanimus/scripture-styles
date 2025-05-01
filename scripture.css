@@ -49,12 +49,6 @@
 		font-weight: normal;
 		color: var(--ss-color-text-muted);
 	}
-	.ca:before {
-		content: '(';
-	}
-	.ca:after {
-		content: ')' !important;
-	}
 
 	.cl {
 		text-align: center;
@@ -78,24 +72,21 @@
 		font-family: var(--ss-font-sans);
 		font-weight: bold;
 	}
-	.v:after,
-	.vp:after,
-	sup[class^='v']:after {
-		content: '\a0';
-	}
-
-	sup + sup:before {
+	:where(.v:after, .vp:after, sup[class^='v']:after, sup + sup:before) {
 		content: '\a0';
 	}
 
 	.va {
 		font-style: italic;
 	}
-	.va:before {
-		content: '(';
-	}
-	.va:after {
-		content: ')' !important;
+
+	:where(.ca, .va) {
+		&::before {
+			content: '(';
+		}
+		&::after {
+			content: ')' !important;
+		}
 	}
 	/*-----------------------------------------------------------
 	_cross-references.scss
@@ -225,37 +216,20 @@
 		padding-inline-end: 1em;
 	}
 
-	.im {
+	:where(.im, .imi, .ipr) {
 		text-indent: 0;
 	}
-
-	.imi {
-		text-indent: 0;
+	:where(.imi, .ipq, .imq, [class^='iq'], .ili1) {
 		margin-inline-start: 1em;
 		margin-inline-end: 1em;
 	}
 
 	.ipq {
 		font-style: italic;
-		margin-inline-start: 1em;
-		margin-inline-end: 1em;
 	}
-
-	.imq {
-		margin-inline-start: 1em;
-		margin-inline-end: 1em;
-	}
-
 	.ipr {
 		text-align: end;
-		text-indent: 0;
 	}
-
-	[class^='iq'] {
-		margin-inline-start: 1em;
-		margin-inline-end: 1em;
-	}
-
 	.iq2 {
 		text-indent: 1em;
 	}
@@ -264,12 +238,6 @@
 		padding-inline-start: 1em;
 		text-indent: -1em;
 	}
-
-	.ili1 {
-		margin-inline-start: 1em;
-		margin-inline-end: 1em;
-	}
-
 	.ili2 {
 		margin-inline-start: 2em;
 		margin-inline-end: 1em;
@@ -283,25 +251,25 @@
 		margin-block-end: 0px;
 	}
 
+	:where(.io, .io1, .io2, .io3, .io4) {
+		margin-inline-end: 0em;
+	}
+
 	.io,
 	.io1 {
 		margin-inline-start: 1em;
-		margin-inline-end: 0em;
 	}
 
 	.io2 {
 		margin-inline-start: 2em;
-		margin-inline-end: 0em;
 	}
 
 	.io3 {
 		margin-inline-start: 3em;
-		margin-inline-end: 0em;
 	}
 
 	.io4 {
 		margin-inline-start: 4em;
-		margin-inline-end: 0em;
 	}
 
 	.ior {
@@ -329,49 +297,34 @@
 		text-indent: 0 !important;
 	}
 
-	.pmo {
-		text-indent: 0;
-		margin-inline-start: 1em;
+	:where(.pmo, .pm, .pmc, .pi, .pi1, .pi2, .pi3, .mi, .li2, .li3, .li4) {
 		margin-inline-end: 0em;
 	}
-
-	.pm {
+	:where(.pmo, .pm, .pmc, .pi, .mi) {
 		margin-inline-start: 1em;
-		margin-inline-end: 0em;
+	}
+
+	.pmo {
+		text-indent: 0;
 	}
 
 	.pmr {
 		text-align: end;
 	}
 
-	.pmc {
-		margin-inline-start: 1em;
-		margin-inline-end: 0em;
-	}
-
-	.pi {
-		margin-inline-start: 1em;
-		margin-inline-end: 0em;
-	}
-
 	.pi1 {
 		margin-inline-start: 2em;
-		margin-inline-end: 0em;
 	}
 
 	.pi2 {
 		margin-inline-start: 3em;
-		margin-inline-end: 0em;
 	}
 
 	.pi3 {
 		margin-inline-start: 4em;
-		margin-inline-end: 0em;
 	}
 
 	.mi {
-		margin-inline-start: 1em;
-		margin-inline-end: 0em;
 		text-indent: 0;
 	}
 
@@ -393,17 +346,14 @@
 
 	.li2 {
 		margin-inline-start: 2em;
-		margin-inline-end: 0em;
 	}
 
 	.li3 {
 		margin-inline-start: 3em;
-		margin-inline-end: 0em;
 	}
 
 	.li4 {
 		margin-inline-start: 4em;
-		margin-inline-end: 0em;
 	}
 
 	.b {
@@ -414,6 +364,10 @@
 	_poetry.scss
 	-----------------------------------------------------------*/
 
+	:where(.qr, .qs, .qa, .qac, .qt) {
+		font-style: italic;
+	}
+
 	[class^='q'] {
 		padding-inline-start: 1em;
 		text-indent: -1em;
@@ -423,22 +377,18 @@
 
 	.q2 {
 		margin-inline-start: 1.5em;
-		margin-inline-end: 0em;
 	}
 
 	.q3 {
 		margin-inline-start: 2em;
-		margin-inline-end: 0em;
 	}
 
 	.q4 {
 		margin-inline-start: 2.5em;
-		margin-inline-end: 0em;
 	}
 
 	.qr {
 		text-align: end;
-		font-style: italic;
 	}
 
 	.qc {
@@ -446,38 +396,30 @@
 	}
 
 	.qs {
-		font-style: italic;
 		text-align: end;
 	}
 
 	.qa {
 		text-align: center;
-		font-style: italic;
 		font-size: 1.1em;
 		margin-inline-start: 0em;
-		margin-inline-end: 0em;
 	}
 
 	.qac {
 		margin-inline-start: 0em;
-		margin-inline-end: 0em;
 		padding: 0;
 		text-indent: 0;
-		font-style: italic;
 	}
 
 	.qm2 {
 		margin-inline-start: 1.5em;
-		margin-inline-end: 0em;
 	}
 
 	.qm3 {
 		margin-inline-start: 2em;
-		margin-inline-end: 0em;
 	}
 
 	.qt {
-		font-style: italic;
 		text-indent: 0;
 		padding: 0;
 		margin: 0;
@@ -485,64 +427,25 @@
 	/*-----------------------------------------------------------
 	_special-texts.scss
 	-----------------------------------------------------------*/
-	.bk {
+	:where(.bk, .add, .dc, .k, .sls, .tl, .em, .it, .bdit, .qt, .sig) {
 		font-style: italic;
+	}
+	:where(.k, .lit, .pn, .bd, .bdit) {
+		font-weight: bold;
 	}
 
 	.nd {
 		font-variant: small-caps;
 	}
-
-	.add {
-		font-style: italic;
-	}
-
-	.dc {
-		font-style: italic;
-	}
-
-	.k {
-		font-weight: bold;
-		font-style: italic;
-	}
-
 	.lit {
 		text-align: end;
-		font-weight: bold;
 	}
-
 	.pn {
-		font-weight: bold;
 		text-decoration: underline;
-	}
-
-	.sls {
-		font-style: italic;
-	}
-
-	.tl {
-		font-style: italic;
 	}
 
 	.wj {
 		color: var(--ss-color-text-redletter);
-	}
-
-	.em {
-		font-style: italic;
-	}
-
-	.bd {
-		font-weight: bold;
-	}
-
-	.it {
-		font-style: italic;
-	}
-
-	.bdit {
-		font-weight: bold;
-		font-style: italic;
 	}
 
 	.no {
@@ -554,13 +457,8 @@
 		font-variant: small-caps;
 	}
 
-	.qt {
-		font-style: italic;
-	}
-
 	.sig {
 		font-weight: normal;
-		font-style: italic;
 	}
 
 	/*-----------------------------------------------------------
@@ -613,8 +511,7 @@
 	}
 
 	.mt2 {
-		font-size: calc(2.22222 * var(--ss-rem));
-		margin-block-start: calc(-1.5 * var(--ss-rem));
+		font-size: calc(1.9 * var(--ss-rem));
 		font-style: italic;
 		font-weight: normal;
 	}
@@ -626,15 +523,15 @@
 	.ms3 {
 		text-align: center;
 		font-weight: bold;
-		font-size: 1.6rem;
+		font-size: calc(1.5 * var(--ss-rem));
 		line-height: 1.8;
-		margin-block-start: 1.6rem;
-		margin-block-end: 0px;
+		margin-block-start: calc(1.5 * var(--ss-rem));
+		margin-block-end: 0;
 	}
 
 	.mr {
-		font-size: 0.9em;
-		margin-block-end: 1.6rem;
+		font-size: calc(0.9 * var(--ss-rem));
+		margin-block-end: calc(1.5 * var(--ss-rem));
 		text-align: center;
 		font-weight: normal;
 		font-style: italic;
@@ -649,8 +546,8 @@
 		font-weight: bold;
 		font-style: italic;
 		font-size: inherit;
-		margin-block-end: 0.9rem;
-		margin-block-start: 1.6rem;
+		margin-block-end: calc(0.9 * var(--ss-rem));
+		margin-block-start: calc(1.5 * var(--ss-rem));
 	}
 
 	.sr {
@@ -662,7 +559,7 @@
 	}
 
 	.r {
-		font-size: 1.125rem;
+		font-size: var(--ss-rem);
 		font-weight: normal;
 		font-style: italic;
 		text-align: center;

@@ -1,0 +1,91 @@
+// Indent all paragraphs
+[class^='p'] {
+	@include text-indent;
+}
+
+// Normal paragraph
+.p {
+}
+
+// Flush left paragraph
+.m {
+	text-indent: 0 !important;
+}
+
+// Embeded text opening
+.pmo {
+	text-indent: 0;
+}
+
+// Embedded text paragraph
+.pm {
+}
+
+// Embedded Text Refrain
+.pmr {
+	text-align: end;
+}
+
+// Embedded text closing
+.pmc {
+}
+
+// Indented paragraph.
+.pi {
+}
+
+.pi1 {
+	margin-inline-start: 2em;
+}
+
+.pi2 {
+	margin-inline-start: 3em;
+}
+
+.pi3 {
+	margin-inline-start: 4em;
+}
+
+// Indented flush left (no margin)
+.mi {
+	text-indent: 0;
+}
+
+// No break, (currently we strip these out of the html)
+.nb {
+}
+
+// Centered paragraph
+.pc {
+	text-align: center;
+	text-indent: 0;
+}
+
+// Closure of an epistle/letter
+.cls {
+	text-align: end;
+}
+
+[class^='li'] {
+	padding-inline-start: 1em;
+	text-indent: -1em;
+	margin-inline-start: 1em;
+	margin-inline-end: 0em;
+}
+
+.li2 {
+	margin-inline-start: 2em;
+}
+
+.li3 {
+	margin-inline-start: 3em;
+}
+
+.li4 {
+	margin-inline-start: 4em;
+}
+
+// Blank line
+.b {
+	height: calc(1.5 * var(--ss-rem));
+}

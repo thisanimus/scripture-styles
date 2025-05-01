@@ -1,0 +1,32 @@
+table {
+	width: 100%;
+	display: table;
+}
+
+// Table row <tr> markup
+.tr {
+	display: table-row;
+}
+
+// Table heading <td> markup
+[class^='th'] {
+	font-style: italic;
+	display: table-cell;
+}
+
+// Table heading right
+[class^='thr'] {
+	text-align: end;
+	padding: 0 calc(1.5 * var(--ss-rem));
+}
+
+// Table cell
+[class^='tc'] {
+	display: table-cell;
+}
+
+// Table cell right aligned
+[class^='tcr'] {
+	text-align: end;
+	padding: 0 calc(1.5 * var(--ss-rem));
+}

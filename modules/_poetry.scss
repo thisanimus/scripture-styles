@@ -1,0 +1,71 @@
+// Poetic line.
+
+:where(.qr, .qs, .qa, .qac, .qt) {
+	font-style: italic;
+}
+
+[class^='q'] {
+	padding-inline-start: 1em;
+	text-indent: -1em;
+	margin-inline-start: 1em;
+	margin-inline-end: 0em;
+}
+
+.q2 {
+	margin-inline-start: 1.5em;
+}
+
+.q3 {
+	margin-inline-start: 2em;
+}
+
+.q4 {
+	margin-inline-start: 2.5em;
+}
+
+// Right-aligned poetic line.
+.qr {
+	text-align: end;
+}
+
+// Centered poetic line
+.qc {
+	text-align: center;
+}
+
+// Selah
+.qs {
+	text-align: end;
+}
+
+// Acrostic heading
+.qa {
+	text-align: center;
+	font-size: 1.1em;
+	margin-inline-start: 0em;
+}
+
+.qac {
+	margin-inline-start: 0em;
+	padding: 0;
+	text-indent: 0;
+}
+
+// Embeded poetic line
+.qm,
+.qm1 {
+}
+
+.qm2 {
+	margin-inline-start: 1.5em;
+}
+
+.qm3 {
+	margin-inline-start: 2em;
+}
+
+.qt {
+	text-indent: 0;
+	padding: 0;
+	margin: 0;
+}

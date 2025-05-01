@@ -1,0 +1,67 @@
+// Chapter number
+.c {
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+// Alternate (second) chapter number.
+.ca {
+	font-style: italic;
+	font-weight: normal;
+	color: var(--ss-color-text-muted);
+}
+
+// Published chapter character.
+// cp = h3
+.cp {
+}
+
+// cl = h3 (should this be an inline element?)
+.cl {
+	text-align: center;
+	font-weight: bold;
+}
+
+// Chapter Description
+.cd {
+	margin-inline-start: 1em;
+	margin-inline-end: 1em;
+	font-style: italic;
+}
+
+// Verse Numbers
+.v,
+.vp,
+sup[class^='v'] {
+	color: var(--ss-color-text-intense);
+	font-size: 0.7em;
+	letter-spacing: -0.03em;
+	vertical-align: 0.25em;
+	line-height: 0;
+	font-family: var(--ss-font-sans);
+	font-weight: bold;
+}
+:where(.v:after, .vp:after, sup[class^='v']:after, sup + sup:before) {
+	content: '\a0';
+}
+
+// Verse Alternate
+.va {
+	font-style: italic;
+}
+
+// Paren Wrap
+:where(.ca, .va) {
+	&::before {
+		content: '(';
+	}
+	&::after {
+		content: ')' !important;
+	}
+}
+
+// Published verse character
+.vp {
+	// no extra styles yet
+}

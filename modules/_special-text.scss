@@ -1,0 +1,113 @@
+:where(.bk, .add, .dc, .k, .sls, .tl, .em, .it, .bdit, .qt, .sig) {
+	font-style: italic;
+}
+:where(.k, .lit, .pn, .bd, .bdit) {
+	font-weight: bold;
+}
+
+//  Quoted book title.
+.bk {
+}
+
+// Name of Diety. Small caps?
+.nd {
+	font-variant: small-caps;
+}
+
+// Translators addition
+.add {
+}
+
+// Deuterocanonical/LXX additions
+.dc {
+}
+
+// Keyword
+.k {
+}
+
+// Liturgical note/comment
+.lit {
+	text-align: end;
+}
+
+// TODO:
+// Ordinal number ending
+// .ord {}
+
+// Proper name
+.pn {
+	text-decoration: underline;
+}
+
+// Secondary language
+.sls {
+}
+
+// Tr
+.tl {
+}
+
+// Words of Jesus
+.wj {
+	color: var(--ss-color-text-redletter);
+}
+
+// Emphasis text
+.em {
+}
+
+// Bold text
+.bd {
+}
+
+// Italic text
+.it {
+}
+
+// Bold italic
+.bdit {
+}
+
+// Normal text
+.no {
+	font-weight: normal;
+	font-style: normal;
+}
+
+// Small caps text
+.sc {
+	font-variant: small-caps;
+}
+
+// Page break
+// .pb {}
+
+// ---------------
+// Special Figures
+// ---------------
+// Note: We may do something with these in the future should we start working with versions that contain images/figures.
+// .fig {}
+
+// Subject index entry
+// .ndx {}
+
+// Pronunciation information. Used for CJK texts.
+// .pro {}
+
+// Wordlist/glossary/dictionary entry
+// .w {}
+
+// Greek wordlist entry
+// .wg {}
+
+// Hebrew wordlist entry
+// .wh {}
+
+// Quoted text
+.qt {
+}
+
+// Signature
+.sig {
+}
