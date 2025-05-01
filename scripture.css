@@ -1,7 +1,7 @@
 .scripture-styles {
 	font-size: 1.125rem;
 	font-family: 'Noto Serif', serif;
-	line-height: 1.6rem;
+	line-height: 1.5;
 	color: #111111;
 	-webkit-font-smoothing: antialiased;
 
@@ -166,7 +166,7 @@
 		text-align: center;
 		font-weight: bold;
 		font-size: 1.6rem;
-		line-height: 3rem;
+		line-height: 1.8;
 		margin-top: 1.6rem;
 		margin-bottom: 1.6rem;
 	}
@@ -233,7 +233,7 @@
 	.iot {
 		font-weight: bold;
 		font-size: 1.125rem;
-		line-height: 1.6rem;
+		line-height: 1.5;
 		margin-top: 1.6rem;
 		margin-bottom: 0px;
 	}
@@ -546,7 +546,7 @@
 	.mt1,
 	.mt2 {
 		font-size: 2.5rem;
-		line-height: 3rem;
+		line-height: 1.2;
 		margin-top: 1.6rem;
 		margin-bottom: 1.6rem;
 	}
@@ -566,7 +566,7 @@
 		text-align: center;
 		font-weight: bold;
 		font-size: 1.6rem;
-		line-height: 3rem;
+		line-height: 1.8;
 		margin-top: 1.6rem;
 		margin-bottom: 0px;
 	}
@@ -610,7 +610,7 @@
 
 	.rq {
 		font-size: inherit;
-		line-height: 1.6rem;
+		line-height: 1.6;
 		font-style: italic;
 		text-align: right;
 		letter-spacing: normal;
