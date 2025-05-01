@@ -58,8 +58,8 @@
 	}
 
 	.cd {
-		margin-left: 1em;
-		margin-right: 1em;
+		margin-inline-start: 1em;
+		margin-inline-end: 1em;
 		font-style: italic;
 	}
 
@@ -73,7 +73,6 @@
 		line-height: 0;
 		font-family: var(--ss-font-sans);
 		font-weight: bold;
-		top: inherit;
 	}
 	.v:after,
 	.vp:after,
@@ -104,7 +103,7 @@
 		padding: 0 0.4em;
 		margin: 0 0.1em;
 		text-indent: 0;
-		text-align: left;
+		text-align: start;
 		border-radius: 0.25rem;
 		border: 1px solid var(--ss-color-ui);
 	}
@@ -151,7 +150,7 @@
 		padding: 0 0.4em;
 		margin: 0 0.1em;
 		text-indent: 0;
-		text-align: left;
+		text-align: start;
 		border-radius: 0.25rem;
 		border: 1px solid var(--ss-color-ui);
 	}
@@ -198,8 +197,8 @@
 		font-weight: bold;
 		font-size: 1.6rem;
 		line-height: 1.8;
-		margin-top: 1.6rem;
-		margin-bottom: 1.6rem;
+		margin-block-start: 1.6rem;
+		margin-block-end: 1.6rem;
 	}
 
 	[class^='ip'] {
@@ -207,8 +206,8 @@
 	}
 
 	.ipi {
-		padding-left: 1em;
-		padding-right: 1em;
+		padding-inline-start: 1em;
+		padding-inline-end: 1em;
 	}
 
 	.im {
@@ -217,29 +216,29 @@
 
 	.imi {
 		text-indent: 0;
-		margin-left: 1em;
-		margin-right: 1em;
+		margin-inline-start: 1em;
+		margin-inline-end: 1em;
 	}
 
 	.ipq {
 		font-style: italic;
-		margin-left: 1em;
-		margin-right: 1em;
+		margin-inline-start: 1em;
+		margin-inline-end: 1em;
 	}
 
 	.imq {
-		margin-left: 1em;
-		margin-right: 1em;
+		margin-inline-start: 1em;
+		margin-inline-end: 1em;
 	}
 
 	.ipr {
-		text-align: right;
+		text-align: end;
 		text-indent: 0;
 	}
 
 	[class^='iq'] {
-		margin-left: 1em;
-		margin-right: 1em;
+		margin-inline-start: 1em;
+		margin-inline-end: 1em;
 	}
 
 	.iq2 {
@@ -247,47 +246,47 @@
 	}
 
 	[class^='ili'] {
-		padding-left: 1em;
+		padding-inline-start: 1em;
 		text-indent: -1em;
 	}
 
 	.ili1 {
-		margin-left: 1em;
-		margin-right: 1em;
+		margin-inline-start: 1em;
+		margin-inline-end: 1em;
 	}
 
 	.ili2 {
-		margin-left: 2em;
-		margin-right: 1em;
+		margin-inline-start: 2em;
+		margin-inline-end: 1em;
 	}
 
 	.iot {
 		font-weight: bold;
 		font-size: 1.125rem;
 		line-height: 1.5;
-		margin-top: 1.6rem;
-		margin-bottom: 0px;
+		margin-block-start: 1.6rem;
+		margin-block-end: 0px;
 	}
 
 	.io,
 	.io1 {
-		margin-left: 1em;
-		margin-right: 0em;
+		margin-inline-start: 1em;
+		margin-inline-end: 0em;
 	}
 
 	.io2 {
-		margin-left: 2em;
-		margin-right: 0em;
+		margin-inline-start: 2em;
+		margin-inline-end: 0em;
 	}
 
 	.io3 {
-		margin-left: 3em;
-		margin-right: 0em;
+		margin-inline-start: 3em;
+		margin-inline-end: 0em;
 	}
 
 	.io4 {
-		margin-left: 4em;
-		margin-right: 0em;
+		margin-inline-start: 4em;
+		margin-inline-end: 0em;
 	}
 
 	.ior {
@@ -313,47 +312,47 @@
 
 	.pmo {
 		text-indent: 0;
-		margin-left: 1em;
-		margin-right: 0em;
+		margin-inline-start: 1em;
+		margin-inline-end: 0em;
 	}
 
 	.pm {
-		margin-left: 1em;
-		margin-right: 0em;
+		margin-inline-start: 1em;
+		margin-inline-end: 0em;
 	}
 
 	.pmr {
-		text-align: right;
+		text-align: end;
 	}
 
 	.pmc {
-		margin-left: 1em;
-		margin-right: 0em;
+		margin-inline-start: 1em;
+		margin-inline-end: 0em;
 	}
 
 	.pi {
-		margin-left: 1em;
-		margin-right: 0em;
+		margin-inline-start: 1em;
+		margin-inline-end: 0em;
 	}
 
 	.pi1 {
-		margin-left: 2em;
-		margin-right: 0em;
+		margin-inline-start: 2em;
+		margin-inline-end: 0em;
 	}
 
 	.pi2 {
-		margin-left: 3em;
-		margin-right: 0em;
+		margin-inline-start: 3em;
+		margin-inline-end: 0em;
 	}
 
 	.pi3 {
-		margin-left: 4em;
-		margin-right: 0em;
+		margin-inline-start: 4em;
+		margin-inline-end: 0em;
 	}
 
 	.mi {
-		margin-left: 1em;
-		margin-right: 0em;
+		margin-inline-start: 1em;
+		margin-inline-end: 0em;
 		text-indent: 0;
 	}
 
@@ -363,29 +362,29 @@
 	}
 
 	.cls {
-		text-align: right;
+		text-align: end;
 	}
 
 	[class^='li'] {
-		padding-left: 1em;
+		padding-inline-start: 1em;
 		text-indent: -1em;
-		margin-left: 1em;
-		margin-right: 0em;
+		margin-inline-start: 1em;
+		margin-inline-end: 0em;
 	}
 
 	.li2 {
-		margin-left: 2em;
-		margin-right: 0em;
+		margin-inline-start: 2em;
+		margin-inline-end: 0em;
 	}
 
 	.li3 {
-		margin-left: 3em;
-		margin-right: 0em;
+		margin-inline-start: 3em;
+		margin-inline-end: 0em;
 	}
 
 	.li4 {
-		margin-left: 4em;
-		margin-right: 0em;
+		margin-inline-start: 4em;
+		margin-inline-end: 0em;
 	}
 
 	.b {
@@ -393,29 +392,29 @@
 	}
 
 	[class^='q'] {
-		padding-left: 1em;
+		padding-inline-start: 1em;
 		text-indent: -1em;
-		margin-left: 1em;
-		margin-right: 0em;
+		margin-inline-start: 1em;
+		margin-inline-end: 0em;
 	}
 
 	.q2 {
-		margin-left: 1.5em;
-		margin-right: 0em;
+		margin-inline-start: 1.5em;
+		margin-inline-end: 0em;
 	}
 
 	.q3 {
-		margin-left: 2em;
-		margin-right: 0em;
+		margin-inline-start: 2em;
+		margin-inline-end: 0em;
 	}
 
 	.q4 {
-		margin-left: 2.5em;
-		margin-right: 0em;
+		margin-inline-start: 2.5em;
+		margin-inline-end: 0em;
 	}
 
 	.qr {
-		text-align: right;
+		text-align: end;
 		font-style: italic;
 	}
 
@@ -425,33 +424,33 @@
 
 	.qs {
 		font-style: italic;
-		text-align: right;
+		text-align: end;
 	}
 
 	.qa {
 		text-align: center;
 		font-style: italic;
 		font-size: 1.1em;
-		margin-left: 0em;
-		margin-right: 0em;
+		margin-inline-start: 0em;
+		margin-inline-end: 0em;
 	}
 
 	.qac {
-		margin-left: 0em;
-		margin-right: 0em;
+		margin-inline-start: 0em;
+		margin-inline-end: 0em;
 		padding: 0;
 		text-indent: 0;
 		font-style: italic;
 	}
 
 	.qm2 {
-		margin-left: 1.5em;
-		margin-right: 0em;
+		margin-inline-start: 1.5em;
+		margin-inline-end: 0em;
 	}
 
 	.qm3 {
-		margin-left: 2em;
-		margin-right: 0em;
+		margin-inline-start: 2em;
+		margin-inline-end: 0em;
 	}
 
 	.qt {
@@ -483,7 +482,7 @@
 	}
 
 	.lit {
-		text-align: right;
+		text-align: end;
 		font-weight: bold;
 	}
 
@@ -554,7 +553,7 @@
 	}
 
 	[class^='thr'] {
-		text-align: right;
+		text-align: end;
 		padding: 0 1.6rem;
 	}
 
@@ -563,7 +562,7 @@
 	}
 
 	[class^='tcr'] {
-		text-align: right;
+		text-align: end;
 		padding: 0 1.6rem;
 	}
 
@@ -578,13 +577,13 @@
 	.mt2 {
 		font-size: 2.5rem;
 		line-height: 1.2;
-		margin-top: 1.6rem;
-		margin-bottom: 1.6rem;
+		margin-block-start: 1.6rem;
+		margin-block-end: 1.6rem;
 	}
 
 	.mt2 {
 		font-size: 30.25rem;
-		margin-top: -1.6rem;
+		margin-block-start: -1.6rem;
 		font-style: italic;
 		font-weight: normal;
 	}
@@ -598,13 +597,13 @@
 		font-weight: bold;
 		font-size: 1.6rem;
 		line-height: 1.8;
-		margin-top: 1.6rem;
-		margin-bottom: 0px;
+		margin-block-start: 1.6rem;
+		margin-block-end: 0px;
 	}
 
 	.mr {
 		font-size: 0.9em;
-		margin-bottom: 1.6rem;
+		margin-block-end: 1.6rem;
 		text-align: center;
 		font-weight: normal;
 		font-style: italic;
@@ -619,8 +618,8 @@
 		font-weight: bold;
 		font-style: italic;
 		font-size: inherit;
-		margin-bottom: 0.9rem;
-		margin-top: 1.6rem;
+		margin-block-end: 0.9rem;
+		margin-block-start: 1.6rem;
 	}
 
 	.sr {
@@ -643,7 +642,7 @@
 		font-size: inherit;
 		line-height: 1.6;
 		font-style: italic;
-		text-align: right;
+		text-align: end;
 		letter-spacing: normal;
 	}
 
@@ -655,7 +654,7 @@
 	}
 
 	.sp {
-		text-align: left;
+		text-align: start;
 		font-weight: normal;
 		font-style: italic;
 		font-size: inherit;
